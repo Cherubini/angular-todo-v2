@@ -7,6 +7,7 @@ import { DataManagerService } from 'src/app/services/data-manager/data-manager.s
   templateUrl: './todo-add.component.html',
   styleUrls: ['./todo-add.component.scss']
 })
+
 export class TodoAddComponent {
 
   newTodo: Todo = {title:'', priority:1, description: ''}
