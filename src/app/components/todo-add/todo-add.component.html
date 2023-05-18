@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
   <label for="input-title">Inserisci Titolo</label>
   <input id="input-title" type="text" [(ngModel)]="newTodo.title">
 </div>
@@ -10,4 +10,32 @@
   <label for="input-priority">Inserisci Priorità</label>
   <input id="input-priority" type="number" [(ngModel)]="newTodo.priority">
 </div>
-<button (click)="saveTodo()">Salva</button>
+<button (click)="saveTodo()">Salva</button> -->
+
+
+
+<mat-form-field color="primary">
+  <mat-label>Input</mat-label>
+  <input id="input-title" [(ngModel)]="newTodo.title" matInput>
+</mat-form-field>
+
+<mat-form-field >
+  <mat-label>Grado di priorità</mat-label>
+  <mat-select id="input-priority" [(ngModel)]="newTodo.priority">
+    <mat-option [value]="1">uno</mat-option>
+    <mat-option [value]="2">due</mat-option>
+    <mat-option [value]="3">tre</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Inserisci Priorità</mat-label>
+  <textarea id="input-description" [(ngModel)]="newTodo.description" matInput></textarea>
+</mat-form-field>
+
+
+<button (click)="saveTodo()" mat-fab extended color="primary">
+  <mat-icon>bookmark</mat-icon>
+  Save
+</button>
+

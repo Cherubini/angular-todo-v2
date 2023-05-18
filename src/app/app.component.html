@@ -3,5 +3,14 @@
   <span>{{title}}</span>
 </mat-toolbar>
 
-<app-todo-list></app-todo-list>
-<app-todo-add></app-todo-add>
+<div class="todo-container">
+  <app-todo-detail
+    *ngFor="let todo of dataMangerServ.todos"
+    [todoDetail]="todo"></app-todo-detail>
+</div>
+
+<div class="todo-container">
+  <app-todo-add></app-todo-add>
+</div>
+
+

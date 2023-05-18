@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataManagerService } from './services/data-manager/data-manager.service';
 
 
 @Component({
@@ -7,7 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(public dataMangerServ: DataManagerService){
 
+  }
   title = 'angular-todo';
 
 }
