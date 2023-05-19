@@ -1,6 +1,15 @@
 
-:host {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+// :host {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+// }
+
+.margininput{
+  margin: 8px;
+  align-self: center;
+}
+
+.add-input{
+margin: 24px;
 }

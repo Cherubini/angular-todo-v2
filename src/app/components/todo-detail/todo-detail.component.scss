@@ -1,15 +1,19 @@
 .priority1{
-  background-color: rgb(103, 250, 103);
-  border: 2px solid rgb(15, 192, 15);
+  background-color: rgb(43, 167, 43);
+  // border: 2px solid rgb(15, 192, 15);
 }
 
 .priority2{
-  background-color: rgb(250, 190, 80);
-  border: 2px solid rgb(255, 167, 5);
+  background-color: rgb(207, 159, 69);
+  // border: 2px solid rgb(255, 167, 5);
 }
 
 
 .priority3{
-  background-color: rgb(255, 135, 135);
-  border: 2px solid rgb(255, 23, 23);
+  background-color: rgb(189, 74, 74);
+  // border: 2px solid rgb(255, 23, 23);
+}
+
+.todo-card{
+  margin: 1vh;
 }

@@ -12,30 +12,35 @@
 </div>
 <button (click)="saveTodo()">Salva</button> -->
 
+<h1 mat-dialog-title>Aggiungi un todo!</h1>
+<div mat-dialog-content>
+  <div class="add-input">
 
 
-<mat-form-field color="primary">
-  <mat-label>Input</mat-label>
-  <input id="input-title" [(ngModel)]="newTodo.title" matInput>
-</mat-form-field>
+    <mat-form-field color="primary" class="margininput">
+      <mat-label>Input</mat-label>
+      <input id="input-title" [(ngModel)]="newTodo.title" matInput>
+    </mat-form-field>
 
-<mat-form-field >
-  <mat-label>Grado di priorità</mat-label>
-  <mat-select id="input-priority" [(ngModel)]="newTodo.priority">
-    <mat-option [value]="1">uno</mat-option>
-    <mat-option [value]="2">due</mat-option>
-    <mat-option [value]="3">tre</mat-option>
-  </mat-select>
-</mat-form-field>
+    <mat-form-field class="margininput">
+      <mat-label>Grado di priorità</mat-label>
+      <mat-select id="input-priority" [(ngModel)]="newTodo.priority">
+        <mat-option [value]="1">low</mat-option>
+        <mat-option [value]="2">middle</mat-option>
+        <mat-option [value]="3">high</mat-option>
+      </mat-select>
+    </mat-form-field>
 
-<mat-form-field>
-  <mat-label>Inserisci Priorità</mat-label>
-  <textarea id="input-description" [(ngModel)]="newTodo.description" matInput></textarea>
-</mat-form-field>
+    <mat-form-field class="margininput">
+      <mat-label>Inserisci descrizione</mat-label>
+      <textarea id="input-description" [(ngModel)]="newTodo.description" matInput></textarea>
+    </mat-form-field>
 
+  </div>
 
-<button (click)="saveTodo()" mat-fab extended color="primary">
-  <mat-icon>bookmark</mat-icon>
-  Save
-</button>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button  mat-fab extended color="primary" mat-dialog-close cdkFocusInitial  (click)="saveTodo()" > <mat-icon>bookmark</mat-icon>Save </button>
+</div>
 

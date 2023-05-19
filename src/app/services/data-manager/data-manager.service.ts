@@ -18,6 +18,53 @@ export class DataManagerService {
       {
         title: 'compra il pane',
         priority: 1
+      },
+      {
+        title: 'prepara la cena',
+        priority: 2,
+        description: 'Il purè con le patate'
+      },
+      {
+        title: 'Regalo alla Nonna',
+        description: 'Compra il profumo che le piace tanto',
+        priority: 3
+      },
+      {
+        title: 'compra il pane',
+        priority: 1
+      },
+      {
+        title: 'prepara la cena',
+        priority: 2,
+        description: 'Il purè con le patate'
+      },
+      {
+        title: 'Regalo alla Nonna',
+        description: 'Compra il profumo che le piace tanto',
+        priority: 3
+      },
+      {
+        title: 'compra il pane',
+        priority: 1
+      },
+      {
+        title: 'prepara la cena',
+        priority: 2,
+        description: 'Il purè con le patate'
+      },
+      {
+        title: 'Regalo alla Nonna',
+        description: 'Compra il profumo che le piace tanto',
+        priority: 3
+      },
+      {
+        title: 'compra il pane',
+        priority: 1
+      },
+      {
+        title: 'prepara la cena',
+        priority: 2,
+        description: 'Il purè con le patate'
       }
     ];
   }

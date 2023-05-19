@@ -11,18 +11,21 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { TodoAddComponent } from './components/todo-add/todo-add.component';
 import { TodoDetailComponent } from './components/todo-detail/todo-detail.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { PriorityBorderDirective } from './directives/priority-border.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
     TodoDetailComponent,
-    TodoAddComponent
+    TodoAddComponent,
+    PriorityBorderDirective
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
 
 
   ],

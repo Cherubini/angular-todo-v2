@@ -1,13 +1,12 @@
 
 <!--  -->
-<mat-card *ngIf="todoDetail" class="priority{{todoDetail.priority}}">
+<mat-card appPriorityBorder="{{todoDetail.priority}}" *ngIf="todoDetail" class="todo-card">
   <mat-card-header>
     <mat-card-title>{{todoDetail.title}}</mat-card-title>
     <mat-card-subtitle>{{todoDetail.description}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-actions align="end">
-    <button mat-button (click)="deleteTodo()">delete</button>
+    <button class="priority{{todoDetail.priority}}" mat-button (click)="deleteTodo()">delete</button>
   </mat-card-actions>
 </mat-card>
-<br>
 

@@ -3,14 +3,14 @@
   <span>{{title}}</span>
 </mat-toolbar>
 
-<div class="todo-container">
+<div>
   <app-todo-detail
     *ngFor="let todo of dataMangerServ.todos"
     [todoDetail]="todo"></app-todo-detail>
 </div>
 
-<div class="todo-container">
-  <app-todo-add></app-todo-add>
-</div>
+<button (click)="openModal()" class="add-btn" mat-fab extended color="primary">
+  <mat-icon>bookmark_add</mat-icon> Create todo
+</button>
 
 
