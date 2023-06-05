@@ -1,6 +1,10 @@
 
 <mat-toolbar color="primary">
   <span>{{title}}</span>
+  <span class="spacer"></span>
+  <button mat-icon-button (click)="changeTheme()">
+    <mat-icon>{{isLight ? "dark_mode" : "light_mode"}}</mat-icon>
+  </button>
 </mat-toolbar>
 
 <div>
@@ -9,7 +13,7 @@
     [todoDetail]="todo"></app-todo-detail>
 </div>
 
-<button (click)="openModal()" class="add-btn" mat-fab extended color="primary">
+<button (click)="openModal()" class="add-btn" mat-fab extended color="accent">
   <mat-icon>bookmark_add</mat-icon> Create todo
 </button>
 

@@ -14,7 +14,14 @@ export class AppComponent {
 
     }
   title = 'angular-todo';
+  isLight=true;
   openModal(){
     this.dialog.open(TodoAddComponent)
   }
+
+  changeTheme(){
+    document.body.classList.toggle('dark-mode');
+    this.isLight=!this.isLight;
+  }
+
 }
